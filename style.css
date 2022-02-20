@@ -168,41 +168,57 @@ nav a:hover {
   
 }
 
+
 section {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .headingText{
-    margin: 20% 0 0 10%;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    float: left;
+  margin: 20% 0 0 10%;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  float: left;
 }
 
 .DisplayImg{
-    margin: 0 0 0 10%;
-    height: 600px;
-    width: 400px;
+  margin: 0 0 0 10%;
+  height: 700px;
+  width: 400px;
 }
 
 
-
 .name{
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: yellow;
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: yellow;
 }
 
 #about{
   margin: 0 0 0 10%;
-  min-width: 900px;
+  min-width: 800px;
 
 }
 
 #projects{
   margin: 5% 10% 0 10%;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
+margin: 10px;
+background-image: linear-gradient(to right, rgb(0, 140, 221), rgb(0, 34, 56));
+}
+
+.container {
+padding: 2px 16px;
+}
+
+h4{
+font-size: 25px;
+color: white;
 }
 
 .projects{
@@ -212,49 +228,29 @@ section {
   min-width: 1055px;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin: 10px;
-  background-image: linear-gradient(to right, rgb(0, 140, 221), rgb(0, 34, 56));
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
-
-h4{
-  font-size: 25px;
-  color: white;
-}
-
 button {
-  --hue: var(--hue-neutral);
-  border: 1px solid hs(var(--hue), 100%, 30%);
-  background: linear-gradient(to top, hsl(0, 50%, 61%), rgb(212, 226, 230));
-  border-radius: 40px;
-  /* padding: 10px 10px 10px 10px; */
-  color: rgb(0, 0, 0);
-  outline: none;
-  /* font-family: Nova Square; */
-  font-size: 18px;
-  margin: 3px;
+--hue: var(--hue-neutral);
+border: 1px solid hs(var(--hue), 100%, 30%);
+background: linear-gradient(to top, hsl(0, 50%, 61%), rgb(212, 226, 230));
+border-radius: 40px;
+color: rgb(0, 0, 0);
+outline: none;
+font-size: 18px;
+margin: 3px;
 }
 
 button:hover {
-  background: linear-gradient(to bottom, hsl(0, 50%, 61%), rgb(212, 226, 230));
-  transition: all 6s;
-  cursor: pointer;
+background: linear-gradient(to bottom, hsl(0, 50%, 61%), rgb(212, 226, 230));
+transition: all 6s;
+cursor: pointer;
 }
 button:focus {
-  outline: 0;
+outline: 0;
 }
+
 
 #contact{
       margin: 5% 10% 0 10%;
-      /* flex-wrap: nowrap; */
 }
 #about h3{
   color: white;
@@ -272,6 +268,7 @@ button:focus {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   font-size: 30px;
 }
+
 #contact h3{
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -291,4 +288,94 @@ button:focus {
 }
 #contact .socials a{
 margin: 10px;
+}
+
+#head{
+min-width: 1000px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+  
+
+  .headingText{
+      margin: 20% 0 0 10%;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+
+  .DisplayImg{
+      margin: 0 0 0 10%;
+      float: right;
+      height: 400px;
+      width: 400px;
+  }
+  #about{
+      margin: 30% 10% 0 10%;
+  }
+  .side-projects{
+      margin: 0 0 0 35%;
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 600px;
+  }
+  #contact .socials {
+      display: flex;
+      margin: 0% 0% 0% 30%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+
+#head {
+  min-width: 768px;
+}
+  .headingText{
+      margin: 20% 0 0 10%;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+  }
+
+  .DisplayImg{
+      margin: 0 0 0 10%;
+      float: right;
+      height: 400px;
+      width: 400px;
+  }
+
+  .projects{
+    min-width: 600px;
+}
+
+  #about{
+      margin: 40% 0 0 10%;
+      min-width: 700px;
+  }
+  
+  #contact .socials{
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      margin: 0 0 0 20%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .headingText{
+      margin: 20% 0 0 10%;
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+  }
+  #about{
+    margin: 60% 0 0 10%;
+}
+#contact .socials{
+  margin: 0 0 0 30%;
+}
 }
