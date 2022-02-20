@@ -27,3 +27,6 @@ The portfolio is about me with a few for my projects attached in it. My Github a
 https://gmadnani.github.io/Just_about_me/
 
 https://github.com/gmadnani/Just_about_me
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
