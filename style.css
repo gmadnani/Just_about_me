@@ -272,3 +272,23 @@ button:focus {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   font-size: 30px;
 }
+#contact h3{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+
+#contact p{
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 10% 0 0 5%;
+
+}
+#contact .socials{
+  margin: 10% 0 0 0;
+  flex-wrap: nowrap;
+}
+#contact .socials a{
+margin: 10px;
+}
